@@ -1,0 +1,20 @@
+public class App {
+    public static void main(String[] args) {
+        // Criando dois alunos
+        Aluno aluno1 = new Aluno("Carlos Silva", 20, 1.75, 70.5, "2003-05-10", "A12345", "Engenharia de Software");
+        Aluno aluno2 = new Aluno("Maria Oliveira", 22, 1.68, 60.0, "2001-08-15", "B54321", "Arquitetura");
+
+        // Criando dois professores
+        Professor professor1 = new Professor("João Souza", 45, 1.80, 85.0, "1978-03-25", "Matemática", 5000.00);
+        Professor professor2 = new Professor("Ana Costa", 38, 1.65, 55.0, "1985-11-30", "Física", 5500.00);
+
+        // Exibindo informações dos alunos e professores
+        System.out.println("Informações dos Alunos:");
+        System.out.println(aluno1);
+        System.out.println(aluno2);
+
+        System.out.println("\nInformações dos Professores:");
+        System.out.println(professor1);
+        System.out.println(professor2);
+    }
+}
