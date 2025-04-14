@@ -1,0 +1,34 @@
+public class Aluno extends Pessoa {
+    private String matricula;
+    private String curso;
+
+    // Construtor
+    public Aluno(String nome, int idade, double altura, double peso, String dataNascimento, String matricula, String curso) {
+        super(nome, idade, altura, peso, dataNascimento);  // Chama o construtor da classe mãe (Pessoa)
+        this.matricula = matricula;
+        this.curso = curso;
+    }
+
+    // Getters e Setters
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    // Método toString para exibir informações do aluno
+    @Override
+    public String toString() {
+        return super.toString() + ", Matricula=" + matricula + ", Curso=" + curso + "]";
+    }
+}
